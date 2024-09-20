@@ -18,7 +18,9 @@ export function PlayingNow({
   album_cover,
   liked,
 }: CurrentMusicProps) {
-  const [isLiked, setIsLiked] = useState(false)
+  console.log(liked)
+  const [isLiked, setIsLiked] = useState(liked)
+  // FIXME: The initial state of the isLiked is coming wrong && is been re-rendered multiples times
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
@@ -56,7 +58,7 @@ export function PlayingNow({
       </div>
       <button
         type="button"
-        title='Adicionar a músicas curtidas'
+        title="Adicionar a músicas curtidas"
         className="items-center justify-center flex rounded-lg"
         onClick={() => {
           setIsLiked(!isLiked)

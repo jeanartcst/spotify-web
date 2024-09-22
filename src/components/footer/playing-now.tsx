@@ -59,7 +59,7 @@ export function PlayingNow({
       <button
         type="button"
         title="Adicionar a músicas curtidas"
-        className="items-center justify-center flex rounded-lg"
+        className="items-center justify-center flex rounded-lg group"
         onClick={() => {
           setIsLiked(!isLiked);
         }}
@@ -67,7 +67,11 @@ export function PlayingNow({
         {isLiked ? (
           <CheckCircle size={22} weight="fill" color="#1ed760" />
         ) : (
-          <PlusCircle size={22} />
+          <PlusCircle
+            className="group-hover:fill-white transition-colors duration-200"
+            size={22}
+            color="#b3b3b3"
+          />
         )}
       </button>
     </div>

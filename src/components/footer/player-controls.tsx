@@ -54,37 +54,47 @@ export function PlayerControls() {
 
   return (
     <div className="flex flex-col ">
-      <div className="flex-1 flex items-center justify-center mt-2 gap-2 md:gap-4">
-        <div className="flex justify-center items-center gap-2 md:gap-4 px-6">
+      <div className="flex-1 flex items-center justify-center mt-2 gap-2 md:gap-4 ">
+        <div className="flex justify-center items-center gap-2 md:gap-4 ">
           <button
             type="button"
-            className="transition-all "
+            className="group"
             onClick={() => {
               console.log(shuffleStatus);
               handleShuffleClick();
             }}
           >
             {shuffleStatus === "inactive" ? (
-              <Shuffle size={18} color="white" weight="bold" />
+              <Shuffle
+                className="group-hover:fill-white transition-colors duration-200"
+                size={20}
+                color="#b3b3b3"
+                weight="bold"
+              />
             ) : shuffleStatus === "active" ? (
-              <Shuffle size={18} color="#1ed760" weight="bold" />
+              <Shuffle size={20} color="#1ed760" weight="bold" />
             ) : (
               <div className="mt-0 flex flex-col items-center justify-center">
-                <Shuffle size={18} color="#1ed760" weight="bold" />{" "}
+                <Shuffle size={20} color="#1ed760" weight="bold" />{" "}
                 <Plus size={8} color="#1ed760" weight="bold" />
               </div>
             )}
           </button>
-          <button type="button">
-            <SkipBack size={18} weight="fill" />
+          <button type="button" className="group">
+            <SkipBack
+              className="group-hover:fill-white transition-colors duration-200"
+              size={20}
+              color="#b3b3b3"
+              weight="fill"
+            />
           </button>
         </div>
         <button
           type="button"
+          className="rounded-full bg-white p-2 flex items-center justify-center w-8 h-8 transition hover:scale-110"
           onClick={() => {
             setIsPLaying(!isPLaying);
           }}
-          className="rounded-full bg-white p-2 flex items-center justify-center w-8 h-8"
         >
           {isPLaying ? (
             <Pause size={24} weight="fill" color="#000" />
@@ -92,22 +102,33 @@ export function PlayerControls() {
             <Play size={24} weight="fill" color="#000" />
           )}
         </button>
-        <div className="flex justify-center items-center gap-4 px-6">
-          <button type="button">
-            <SkipForward size={18} weight="fill" />
+        <div className="flex justify-center items-center gap-4">
+          <button type="button" className="group">
+            <SkipForward
+              className="group-hover:fill-white transition-colors duration-200"
+              size={20}
+              color="#b3b3b3"
+              weight="fill"
+            />
           </button>
           <button
             type="button"
+            className="group"
             onClick={() => {
               handleRepeatClick();
             }}
           >
             {repeatStatus === "inactive" ? (
-              <Repeat size={18} weight="bold" />
+              <Repeat
+                className="group-hover:fill-white transition-colors duration-200"
+                size={20}
+                color="#b3b3b3"
+                weight="bold"
+              />
             ) : repeatStatus === "active" ? (
-              <Repeat size={18} color="#1ed760" weight="bold" />
+              <Repeat size={20} color="#1ed760" weight="bold" />
             ) : (
-              <RepeatOnce size={18} color="#1ed760" weight="bold" />
+              <RepeatOnce size={20} color="#1ed760" weight="bold" />
             )}
           </button>
         </div>

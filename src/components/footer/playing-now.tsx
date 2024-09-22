@@ -1,13 +1,13 @@
-import { CaretDown, CheckCircle, PlusCircle } from '@phosphor-icons/react'
-import { useEffect, useState } from 'react'
+import { CaretDown, CheckCircle, PlusCircle } from "@phosphor-icons/react";
+import { useEffect, useState } from "react";
 
 export interface CurrentMusicProps {
-  artist_id: string
-  artist: string
-  song: string
-  song_id: string
-  album_cover: string
-  liked: boolean
+  artist_id: string;
+  artist: string;
+  song: string;
+  song_id: string;
+  album_cover: string;
+  liked: boolean;
 }
 
 export function PlayingNow({
@@ -18,17 +18,17 @@ export function PlayingNow({
   album_cover,
   liked,
 }: CurrentMusicProps) {
-  console.log(liked)
-  const [isLiked, setIsLiked] = useState(liked)
+  console.log(liked);
+  const [isLiked, setIsLiked] = useState(liked);
   // FIXME: The initial state of the isLiked is coming wrong && is been re-rendered multiples times
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
-    isLiked !== liked && setIsLiked(liked)
-  }, [])
+    isLiked !== liked && setIsLiked(liked);
+  }, []);
 
   return (
-    <div className="flex-1 flex gap-4 flex-row ">
+    <div className="flex-1 flex gap-2 md:gap-4 flex-row ">
       <div className="px-4 py-3 group relative truncate">
         <button
           type="button"
@@ -61,7 +61,7 @@ export function PlayingNow({
         title="Adicionar a músicas curtidas"
         className="items-center justify-center flex rounded-lg"
         onClick={() => {
-          setIsLiked(!isLiked)
+          setIsLiked(!isLiked);
         }}
       >
         {isLiked ? (
@@ -71,5 +71,5 @@ export function PlayingNow({
         )}
       </button>
     </div>
-  )
+  );
 }

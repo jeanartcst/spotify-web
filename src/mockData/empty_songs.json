@@ -1,0 +1,10 @@
+[
+  {
+    "artist_id": "0",
+    "artist": "No artist available",
+    "song": "No song available",
+    "song_id": "0",
+    "album_cover": "./thereisnoalbumadded.jpg",
+    "liked": false
+  }
+]

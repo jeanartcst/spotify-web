@@ -23,7 +23,7 @@ export function Footer() {
   }, [songs]);
 
   return (
-    <footer className="absolute bottom-1 h-auto min-w-[620px] max-h-24 flex flex-row w-[99.4%] bg-black rounded-sm justify-between  my-1 mx-1">
+    <footer className="absolute bottom-0 h-auto min-w-[620px] max-h-24 flex flex-row w-[99.4%] bg-black rounded-sm justify-between mx-1">
       <div className="flex-1">
         <PlayingNow {...currentSong} />
       </div>

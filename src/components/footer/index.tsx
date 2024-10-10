@@ -19,7 +19,7 @@ export function Footer() {
   const songs: CurrentMusicProps[] = musics;
 
   useEffect(() => {
-    setCurrentSong(songs[0]);
+    setCurrentSong(songs[1]);
   }, [songs]);
 
   return (

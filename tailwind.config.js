@@ -12,13 +12,13 @@ export default {
       ,
       keyframes: {
         gradientShift: {
-          '0%, 100%': { background: 'linear-gradient(to top , #121212 25%, #1E3A8A 75%)' }, // darkBlue
-          '33.33%': { background: 'linear-gradient(to top , #121212 25%, #474747 75%)' }, // darkGray
-          '73.33%': { background: 'linear-gradient(to top , #121212 25%, #448B44 75%)' }, // Green
+          '25%': { background: 'linear-gradient(to top , #121212 25%, #1E3A8A 75%)' }, // darkBlue
+          '0%, 50%': { background: 'linear-gradient(to top , #121212 25%, #474747 75%)' }, // darkGray
+          '100%': { background: 'linear-gradient(to top , #121212 25%, #2D7A23 75%)' }, // darkGreen
         },
       },
       animation: {
-        "color-cycle": "gradientShift 18s linear infinite",
+        "color-cycle": "gradientShift 180s linear infinite",
       }
     },
   },

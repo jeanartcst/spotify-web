@@ -11,7 +11,7 @@ export function Screen() {
       <div className="flex flex-row items-center justify-between min-h-[717px] h-full w-full">
         <SideBar />
         <MainContainer />
-        <div className="flex-auto mx-2 bg-blue-600 h-full rounded-md p-2">
+        <div className="flex-auto mx-2 bg-blue-600 h-full rounded-md p-2 hidden xl:block">
           {" "}
           <span>teste</span>
         </div>

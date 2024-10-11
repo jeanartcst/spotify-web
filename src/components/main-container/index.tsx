@@ -5,7 +5,7 @@ export function MainContainer() {
   return (
     // Tamanho de referência da div 1348 x 717 {todas as divs centralizadas tem 717 de altura}
 
-    <main className="flex rounded-md flex-col w-3/4 h-full animate-color-cycle ease-in-out p-2">
+    <main className="flex rounded-md flex-col h-full animate-color-cycle ease-in-out p-2 overflow-scroll scrollbar-thin scrollbar-thumb-slate-500">
       <div className="flex flex-row gap-2 mt-2">
         <button
           type="button"
@@ -27,7 +27,7 @@ export function MainContainer() {
         </button>
       </div>
       {/* <section className=""> */}
-      <section className="grid grid-cols-4 gap-4 justify-center align-center my-12 mx-auto  rounded ">
+      <section className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 my-12 mx-auto">
         <div className="flex justify-start px-4 items-center w-[326px] h-16 gap-2 bg-slate-300/25 rounded ">
           <div className="w-12 h-12">
             <img src={ThereIsNoAlbumAdded} alt=" Empty Album" />
@@ -82,7 +82,191 @@ export function MainContainer() {
         <span>a</span> */}
       </section>
       <section>
-        <span>a</span>
+        <h1 className="static text-3xl">Feito para Peter Parker</h1>
+        <div className="grid grid-cols-4 xl:grid-cols-6  sm:grid-cols-3 md:grid-cols-4 mt-4">
+          <div className="w-[228px] h-[280px] flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+          <div className="w-[228px] h-[280px]  flex pt-1 justify-center hover:bg-slate-500/50 rounded-lg">
+            <div className="">
+              <img
+                src={ThereIsNoAlbumAdded}
+                alt="Album folder"
+                width={202}
+                className="rounded-lg"
+              />
+              <p className="text-sm text-slate-300 pt-4">
+                Check this album for you.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section>
         <span>a</span>

@@ -14,11 +14,11 @@ export default {
         gradientShift: {
           '25%': { background: 'linear-gradient(to top , #121212 25%, #1E3A8A 75%)' }, // darkBlue
           '0%, 50%': { background: 'linear-gradient(to top , #121212 25%, #474747 75%)' }, // darkGray
-          '100%': { background: 'linear-gradient(to top , #121212 25%, #2D7A23 75%)' }, // darkGreen
+          '100%': { background: 'linear-gradient(to top , #121212 25%, #420C0C 75%)' }, // darkRed
         },
       },
       animation: {
-        "color-cycle": "gradientShift 180s linear infinite",
+        "color-cycle": "gradientShift 320s linear infinite",
       }
     },
   },
